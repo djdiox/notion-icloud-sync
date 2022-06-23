@@ -8,12 +8,9 @@
       "name": "Launch Program",
       "program": "${workspaceFolder}/index.js",
       "request": "launch",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
+      "skipFiles": ["<node_internals>/**"],
       "type": "node"
     },
-
 
     {
       "name": "Launch via NPM",
