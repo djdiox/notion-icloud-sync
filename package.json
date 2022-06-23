@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Syncs iCloud stuff to notion",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": " node index.js",
     "prettier": "prettier --write .",

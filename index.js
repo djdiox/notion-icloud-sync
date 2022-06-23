@@ -1,13 +1,13 @@
 import ICloud from "apple-icloud"
-const { Client } = require("@notionhq/client")
-const dotenv = require("dotenv")
+import { Client } from '@notionhq/client'
+import dotenv from 'dotenv'
 
 dotenv.config()
 const notion = new Client({ auth: process.env.NOTION_KEY })
-
-const databaseId = process.env.NOTION_DATABASE_ID
-;(async () => {
-  const taskPageIdToStatusMap = await setInitialTaskPageIdToStatusMap()
+let taskPageIdToStatusMap;
+const databaseId = process.env.NOTION_DATABASE_ID;
+(async () => {
+  await setInitialTaskPageIdToStatusMap()
   console.log("received tasks", taskPageIdToStatusMap)
   const session = {} // An empty session. Has to be a session object or file path that points on a JSON file containing your session
 
