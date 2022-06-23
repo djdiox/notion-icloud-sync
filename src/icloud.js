@@ -3,7 +3,7 @@ import promptiCloud from './prompt-credentials.js'
 
 (async () => {
   // Login to icloud and ask for new credentials if needed
-  const myCloud = await promptiCloud()
+  const myCloud = ^await promptiCloud()
 
   const collectionsWithOpenTasks = await myCloud.Reminders.getOpenTasks()
 
