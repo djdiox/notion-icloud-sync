@@ -1,0 +1,45 @@
+{
+  "name": "notion-icloud-sync",
+  "version": "1.0.0",
+  "description": "Syncs iCloud stuff to notion",
+  "main": "index.js",
+  "scripts": {
+    "start": " node index.js",
+    "prettier": "prettier --write .",
+    "lint": "prettier --check . && eslint . --ext .ts && cspell '**/*' ",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djdiox/notion-icloud-sync.git"
+  },
+  "keywords": [
+    "iCloud",
+    "Notion",
+    "Sync",
+    "Reminder",
+    "Calender",
+    "Plugin"
+  ],
+  "author": "Markus Wagner (djdiox@yahoo.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/djdiox/notion-icloud-sync/issues"
+  },
+  "homepage": "https://github.com/djdiox/notion-icloud-sync#readme",
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.3",
+    "eslint-plugin-promise": "^6.0.0",
+    "jest": "^28.1.1",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "@notionhq/client": "^1.0.4",
+    "apple-icloud": "^1.1.0"
+  }
+}
